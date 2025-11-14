@@ -1,1 +1,3 @@
-# HortiRobotCatalog
+# Horti Robot Catalog
+
+Placeholder README.
