@@ -1,6 +1,6 @@
 [
   {
-    "merk": "Na\u00efo",
+    "merk": "Naïo",
     "robot": "OZ",
     "gewassen": [
       "sla",
@@ -12,12 +12,61 @@
       "scouten"
     ],
     "ontwikkeling": "commercieel",
-    "kostprijs": "\u20ac70.000 \u2013 \u20ac90.000",
+    "kostprijs": "€70.000 – €90.000",
+    "foto": "https://images.naio-technologies.com/wp-content/uploads/2019/05/oz-robot.jpg",
     "links": [
       {
-        "label": "Demo Video",
-        "url": "https://www.youtube.com/watch?v=VU_8MZaBf1I"
+        "label": "Demo video (YouTube)",
+        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+      },
+      {
+        "label": "Website Naïo OZ",
+        "url": "https://www.naio-technologies.com/oz/"
       }
-    ]
+    ],
+    "opmerkingen": "Klein autonoom werktuigdrager-platform voor mechanische onkruidbestrijding in rijteelten."
+  },
+  {
+    "merk": "FarmDroid",
+    "robot": "FD20",
+    "gewassen": [
+      "bieten",
+      "spinazie",
+      "zaaiuien"
+    ],
+    "handelingen": [
+      "zaaien",
+      "wieden"
+    ],
+    "ontwikkeling": "scale-up",
+    "kostprijs": "€150.000 – €200.000",
+    "foto": "https://farmdroid.dk/wp-content/uploads/2020/01/FarmDroid-FD20.jpg",
+    "links": [
+      {
+        "label": "FD20 demo video",
+        "url": "https://www.youtube.com/results?search_query=farmdroid+fd20"
+      }
+    ],
+    "opmerkingen": "Zonnepaneel-gevoede robot voor precisiezaai en onkruidbestrijding op basis van RTK-GPS en de gezaaide zaden."
+  },
+  {
+    "merk": "XYZ Robotics",
+    "robot": "TomatoPicker",
+    "gewassen": [
+      "tomaat"
+    ],
+    "handelingen": [
+      "oogsten"
+    ],
+    "ontwikkeling": "prototype",
+    "kostprijs": "pilot / prijs op aanvraag",
+    "foto": "",
+    "links": [
+      {
+        "label": "Proefopstelling (NL)",
+        "url": "https://example.org/tomatopicker-pilot"
+      }
+    ],
+    "opmerkingen": "Experimentele oogstrobot voor trostomaten in hoge draad, nog in onderzoeks- en prototypefase."
   }
 ]

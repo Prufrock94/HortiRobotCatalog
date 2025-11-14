@@ -1,17 +1,141 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-<meta charset="UTF-8">
-<title>Horti Robot Catalogus</title>
-<link rel="stylesheet" href="assets/style.css">
-<script defer src="assets/script.js"></script>
+  <meta charset="UTF-8" />
+  <title>Horti Robot Catalogus</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/style.css" />
+  <script defer src="assets/script.js"></script>
 </head>
 <body>
-<h1>Horti Robot Catalogus</h1>
+  <header class="page-header">
+    <div>
+      <h1>Horti Robot Catalogus</h1>
+      <p class="lead">
+        Open, gecureerde lijst van robots voor de tuinbouwsector. Filter op merk, gewas, handeling of ontwikkelingsfase en klik op een robot voor meer details.
+      </p>
+    </div>
+    <button id="btn-new-robot" class="primary-btn">➕ Nieuwe robot indienen</button>
+  </header>
 
-<div id="filters"></div>
-<div id="table-container"></div>
-<div id="detail-panel" class="hidden"></div>
+  <section class="controls">
+    <div class="filters-row">
+      <div class="filter-group">
+        <label for="search-input">Zoeken</label>
+        <input id="search-input" type="text" placeholder="Zoek op merk, robot, gewas..." />
+      </div>
+      <div class="filter-group">
+        <label for="filter-merk">Merk</label>
+        <select id="filter-merk">
+          <option value="">Alle merken</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="filter-gewassen">Gewas</label>
+        <select id="filter-gewassen">
+          <option value="">Alle gewassen</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="filter-handelingen">Handeling</label>
+        <select id="filter-handelingen">
+          <option value="">Alle handelingen</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="filter-ontwikkeling">Ontwikkeling</label>
+        <select id="filter-ontwikkeling">
+          <option value="">Alle fases</option>
+        </select>
+      </div>
+    </div>
+  </section>
 
+  <main class="layout">
+    <section class="table-section">
+      <div id="table-container" class="table-container">
+        <!-- Tabel wordt via JS ingevuld -->
+      </div>
+      <div id="result-count" class="result-count"></div>
+    </section>
+
+    <aside id="detail-panel" class="detail-panel hidden">
+      <!-- Detail wordt via JS ingevuld -->
+    </aside>
+  </main>
+
+  <!-- Modal voor nieuwe robot -->
+  <div id="modal-backdrop" class="modal-backdrop hidden"></div>
+  <div id="new-robot-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="new-robot-title">
+    <div class="modal-header">
+      <h2 id="new-robot-title">Nieuwe robot indienen</h2>
+      <button id="modal-close" class="icon-btn" aria-label="Venster sluiten">✕</button>
+    </div>
+    <div class="modal-body">
+      <p class="modal-intro">
+        Vul hieronder de basisinformatie in. Er wordt automatisch een JSON-template gegenereerd en een GitHub issue geopend.
+      </p>
+      <form id="new-robot-form">
+        <div class="form-row">
+          <label>Merk
+            <input type="text" name="merk" required />
+          </label>
+          <label>Robotnaam
+            <input type="text" name="robot" required />
+          </label>
+        </div>
+        <div class="form-row">
+          <label>Gewassen <span class="hint">(komma-gescheiden)</span>
+            <input type="text" name="gewassen" placeholder="bv. sla, prei, wortel" />
+          </label>
+        </div>
+        <div class="form-row">
+          <label>Handelingen <span class="hint">(komma-gescheiden)</span>
+            <input type="text" name="handelingen" placeholder="bv. wieden, scouten" />
+          </label>
+        </div>
+        <div class="form-row">
+          <label>Ontwikkelingsfase
+            <select name="ontwikkeling">
+              <option value="">Kies fase...</option>
+              <option value="onderzoek">Onderzoek</option>
+              <option value="prototype">Prototype</option>
+              <option value="start-up">Start-up</option>
+              <option value="scale-up">Scale-up</option>
+              <option value="commercieel">Commercieel</option>
+            </select>
+          </label>
+          <label>Kostprijs (indicatief)
+            <input type="text" name="kostprijs" placeholder="bv. €70.000 – €90.000 of P.O.A." />
+          </label>
+        </div>
+        <div class="form-row">
+          <label>Foto-URL
+            <input type="url" name="foto" placeholder="https://..." />
+          </label>
+        </div>
+        <div class="form-row">
+          <label>Opmerkingen
+            <textarea name="opmerkingen" rows="3" placeholder="Korte beschrijving, bijzonderheden..."></textarea>
+          </label>
+        </div>
+        <div class="form-row">
+          <label>Extra links <span class="hint">(optioneel, één per lijn: label | url)</span>
+            <textarea name="links" rows="3" placeholder="Demo video | https://...
+Artikel | https://..."></textarea>
+          </label>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="primary-btn">📤 Genereer JSON & open GitHub issue</button>
+        </div>
+      </form>
+
+      <div class="json-preview">
+        <h3>JSON-template (voorbeeld)</h3>
+        <p class="hint">Deze JSON wordt in het GitHub issue meegegeven zodat je ze eenvoudig kunt kopi&euml;ren naar <code>data/robots.json</code>.</p>
+        <pre id="json-preview-block">{ }</pre>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
