@@ -539,7 +539,7 @@ h1, h2, .detail-title {
 }
 
 .site-logo-title {
-  max-height: 200px;   /* of 80px als je 'm groter wil */
+  max-height: 100px;   /* of 80px als je 'm groter wil */
   height: auto;
   width: auto;        /* heel belangrijk voor verhouding */
   display: block;
