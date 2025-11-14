@@ -34,6 +34,20 @@ body {
   margin-bottom: 1.5rem;
 }
 
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.site-logo {
+  height: 40px;          /* pas aan indien te groot/klein */
+  width: auto;
+  border-radius: 0.75rem; /* optioneel, afgeronde hoeken */
+  box-shadow: 0 4px 10px rgba(15, 23, 42, 0.15); /* subtiele schaduw */
+  flex-shrink: 0;
+}
+
 h1 {
   margin: 0;
   font-size: 1.9rem;
