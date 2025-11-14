@@ -41,12 +41,6 @@ body {
   flex-shrink: 0;     /* header mag niet op het logo besparen */
 }
 
-.site-logo-title {
-  height: 58px;        /* Afhankelijk van jouw logo */
-  width: auto;
-  display: block;
-}
-
 .subtitle {
   font-size: 0.8rem;
   color: var(--muted);
@@ -545,7 +539,7 @@ h1, h2, .detail-title {
 }
 
 .site-logo-title {
-  max-height: 72px;   /* of 80px als je 'm groter wil */
+  max-height: 200px;   /* of 80px als je 'm groter wil */
   height: auto;
   width: auto;        /* heel belangrijk voor verhouding */
   display: block;
