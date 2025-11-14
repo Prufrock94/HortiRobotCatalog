@@ -10,9 +10,11 @@ document.addEventListener("DOMContentLoaded", () => {
   loadRobots();
 });
 
+const DATA_URL = "data/robots.json";
+
 async function loadRobots() {
   try {
-    const res = await fetch("data/robots.json");
+    const res = await fetch(DATA_URL, { cache: "no-store" });
     robots = await res.json();
     filtered = [...robots];
     initFilters();
