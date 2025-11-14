@@ -1,3 +1,3 @@
 # Horti Robot Catalog
 
-Placeholder README.
+Interactieve catalogus met filtering, detailpaneel, issue-knoppen en JSON-data.

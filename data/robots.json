@@ -1,0 +1,47 @@
+[
+  {
+    "merk": "Na\u00efo",
+    "robot": "OZ",
+    "gewassen": [
+      "sla",
+      "prei",
+      "wortel"
+    ],
+    "handelingen": [
+      "wieden",
+      "scouten"
+    ],
+    "ontwikkeling": "commercieel",
+    "kostprijs": "\u20ac70.000 \u2013 \u20ac90.000",
+    "links": [
+      {
+        "label": "Demo Video",
+        "url": "https://youtube.com"
+      },
+      {
+        "label": "Onderzoeksrapport",
+        "url": "https://example.org"
+      }
+    ]
+  },
+  {
+    "merk": "FarmDroid",
+    "robot": "FD20",
+    "gewassen": [
+      "bieten",
+      "spinazie"
+    ],
+    "handelingen": [
+      "zaaien",
+      "wieden"
+    ],
+    "ontwikkeling": "scale-up",
+    "kostprijs": "\u20ac150.000 \u2013 \u20ac200.000",
+    "links": [
+      {
+        "label": "Demo Video",
+        "url": "https://youtube.com"
+      }
+    ]
+  }
+]
