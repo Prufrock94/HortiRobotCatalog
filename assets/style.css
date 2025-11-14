@@ -1,16 +1,1 @@
-
-body { font-family: system-ui; background:#f5f5f7; padding:20px; }
-table { width: 100%; border-collapse: collapse; margin-top:15px; }
-th, td { padding:8px; background:white; border-bottom:1px solid #ddd; }
-th { background:#eee; }
-.hidden { display:none; }
-.action-btn {
-  display:inline-block; margin:4px; padding:6px 10px;
-  background:#2563eb; color:white; text-decoration:none;
-  border-radius:6px; font-size:0.85rem;
-}
-.chip { padding:2px 6px; border-radius:12px; color:white; font-size:0.75rem; margin-right:4px; }
-.chip-blue{background:#2563eb;} .chip-green{background:#059669;}
-.chip-orange{background:#ea580c;} .chip-purple{background:#7c3aed;}
-.chip-red{background:#dc2626;} .chip-gray{background:#6b7280;}
-.icon-dev { font-size:1.2rem; cursor:default; }
+body{font-family:system-ui;}
