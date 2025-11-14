@@ -41,7 +41,7 @@ body {
 }
 
 .site-logo {
-  height: 56px;          /* pas aan indien te groot/klein */
+  height: 116px;          /* pas aan indien te groot/klein */
   width: auto;
   border-radius: 0.75rem; /* optioneel, afgeronde hoeken */
   box-shadow: 0 4px 10px rgba(15, 23, 42, 0.15); /* subtiele schaduw */
