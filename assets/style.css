@@ -159,6 +159,17 @@ h1 {
   color: var(--muted);
 }
 
+.filter-group select:has(option:checked:not([value=""])) {
+  border-color: var(--primary);
+  background: var(--primary-soft);
+  color: var(--text);
+}
+
+.filter-group input:not(:placeholder-shown) {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 1px rgba(37, 99, 235, 0.1);
+}
+
 .detail-panel {
   background: var(--card);
   border-radius: var(--radius-lg);
