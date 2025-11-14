@@ -38,6 +38,7 @@ body {
   display: flex;
   align-items: center;
   padding: 0.5rem 0;
+  flex-shrink: 0;     /* header mag niet op het logo besparen */
 }
 
 .site-logo-title {
@@ -541,4 +542,12 @@ h1, h2, .detail-title {
 .table-container th {
   font-family: "Poppins", "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-weight: 600;
+}
+
+.site-logo-title {
+  max-height: 72px;   /* of 80px als je 'm groter wil */
+  height: auto;
+  width: auto;        /* heel belangrijk voor verhouding */
+  display: block;
+  flex-shrink: 0;     /* niet laten platdrukken in de flex header */
 }
