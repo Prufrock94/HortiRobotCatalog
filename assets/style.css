@@ -37,15 +37,20 @@ body {
 .logo-title {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  padding: 0.5rem 0;
 }
 
-.site-logo {
-  height: 116px;          /* pas aan indien te groot/klein */
+.site-logo-title {
+  height: 116px;        /* Afhankelijk van jouw logo */
   width: auto;
-  border-radius: 0.75rem; /* optioneel, afgeronde hoeken */
-  box-shadow: 0 4px 10px rgba(15, 23, 42, 0.15); /* subtiele schaduw */
-  flex-shrink: 0;
+  display: block;
+}
+
+.subtitle {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-top: -4px;
+  letter-spacing: 0.02em;
 }
 
 h1 {
