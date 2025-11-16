@@ -631,19 +631,3 @@ h1, h2, .detail-title {
   background: #e0ecff;
   transform: translateY(-1px);
 }
-
-body {
-  margin: 0;
-  padding: 1.5rem;
-  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  color: var(--text);
-
-  background: 
-    radial-gradient(
-      circle at 75% 0%,           /* rechtsboven */
-      rgba(0, 120, 140, 0.55) 0%, /* teal glow */
-      rgba(0, 120, 140, 0.16) 35%,
-      rgba(0, 120, 140, 0.00) 70%
-    ),
-    #07090c; /* donkere basiskleur */
-}
