@@ -40,7 +40,7 @@
     ],
     "ontwikkeling": "scale-up",
     "kostprijs": "€150.000 – €200.000",
-    "foto": "https://www.google.com/imgres?q=farmdroid%20fd20&imgurl=https%3A%2F%2Ffarmdroid.com%2Fwp-content%2Fuploads%2FFD20-AFW-tilted-left-1536x864.png&imgrefurl=https%3A%2F%2Ffarmdroid.com%2Fnl%2F&docid=l40-3QlsjaUsmM&tbnid=bYmpD8Z1Z2tkmM&vet=12ahUKEwjaxuuW3fGQAxUVV6QEHf-RDsgQM3oECCYQAA..i&w=1536&h=864&hcb=2&ved=2ahUKEwjaxuuW3fGQAxUVV6QEHf-RDsgQM3oECCYQAA",
+    "foto": "https://farmdroid.com/wp-content/uploads/FD20-AFW-tilted-left-1536x864.png",
     "links": [
       {
         "label": "FD20 demo video",
@@ -64,7 +64,7 @@
     "links": [
       {
         "label": "Proefopstelling (NL)",
-        "url": "https://example.org/tomatopicker-pilot"
+        "url": "https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_848,h_565/https://www.futurefarming.com/app/uploads/2023/07/IMG_InahoEurope_web-848x565.jpg"
       }
     ],
     "opmerkingen": "Experimentele oogstrobot voor trostomaten in hoge draad, nog in onderzoeks- en prototypefase."
